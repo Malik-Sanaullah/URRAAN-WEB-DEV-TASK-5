@@ -6,6 +6,18 @@
     <title>Keefer: Task 8</title>
     <link rel="stylesheet" href="Task_5.css">
 </head>
+
+<script>
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector("#nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+
+</script>
+
 <body>
     <div class="full-scr">
         <header>
@@ -28,7 +40,12 @@
 <!-- Navigation Section -->
 <nav>
     <div class="container-navbar">
-        <ul>
+
+        <div class="menu-toggle">
+            <img src="./Assets/responsive_menu_icon.png" alt="Menu">
+        </div>
+
+        <ul id="nav-links">
             <li class="active"><a href="#">HOME</a></li>
             <li><a href="#">BIOGRAPHY</a></li>
             <li><a href="#">BLOG</a></li>
@@ -36,6 +53,7 @@
             <li><a href="#">LIBRARY</a></li>
             <li><a href="#">CONTACT</a></li>
         </ul>
+
     </div>
 </nav>
 
@@ -201,7 +219,7 @@
                         <h2>PRACTICE <span>AREAS</span></h2>
 
                         <div class="left-side-btns">
-                            <div id="left-btn">
+                            <div class="left-btn">
                                 <img src="./Assets/menu_bg.gif" alt="side-btn-img">
 
                                 <h1>DUI & DWI</h1>
@@ -212,7 +230,7 @@
                                 </div>
                             </div>
 
-                            <div id="left-btn">
+                            <div class="left-btn">
                                 <img src="./Assets/menu_bg.gif" alt="side-btn-img">
                                 <h1>RECKLESS DRIVING</h1>
                                 <div class="btn-allignment">
@@ -221,7 +239,7 @@
                                 </div>
                             </div>
 
-                            <div id="left-btn">
+                            <div class="left-btn">
                                 <img src="./Assets/menu_bg.gif" alt="side-btn-img">
                                 <h1>SPEED TICKETS</h1>
                                 <div class="btn-allignment">
@@ -231,7 +249,7 @@
                                 
                             </div>
 
-                            <div id="left-btn">
+                            <div class="left-btn">
                                 <img src="./Assets/menu_bg.gif" alt="side-btn-img">
                                 <h1>TRAFFIC VIOLATIONS</h1>
                                 <div class="btn-allignment">
