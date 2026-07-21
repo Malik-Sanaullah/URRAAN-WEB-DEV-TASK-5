@@ -5,7 +5,7 @@
     font-family: Arial;
 }
 
-/* Starting Header Section */
+/* -------------Header Section------------------- */
 .container-header{
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@
     margin-top: -8px;
 }
 
-/* Starting Navbar Section */
+/* -------------------------------Navigation Section----------------------------- */
 .container-navbar{
     width: 100%;
     background-color: #8b161e;
@@ -92,7 +92,7 @@
     background-color: #676767;
 }
 
-/* Starting Main Section */
+/* ------------------------------------Main Section--------------------------------- */
 .container-main .top-section1{
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -106,7 +106,7 @@
     box-shadow: 1px 1px 10px #333;
 }
 
-/* Image 2 Section */
+/* ------------------------------------------Image 2 Section---------------------------------- */
 .main-img2{
     box-shadow: 1px 1px 10px #333;
     background-image: url(assets/form_bg.jpg);
@@ -119,11 +119,13 @@
     gap: 3px;
     box-sizing: border-box;
 }
-.first-dev{
+
+.first-div{
     display: flex;
     justify-content: start;
     gap: 25px;
 }
+
 .main-img2 .text1-on-img h2{
     width: 190px;
     color: #333;
@@ -310,7 +312,8 @@ form input[type="tel"]{
     width: 110%;
 }
 
-/* Headings */
+/* -----------Headings-------------------- */
+
 .left-section2 h2,
 .mid-section2 h2,
 .mid-section-right h1 {
@@ -337,7 +340,7 @@ form input[type="tel"]{
     margin: 0 0 15px 0;
 }
 
-/* ===== Paragraph text ===== */
+/* -------------------------Paragraph text-------------- */
 .left-section2 p,
 .mid-section2 p,
 .mid-section-right p {
@@ -350,7 +353,7 @@ form input[type="tel"]{
     letter-spacing: px;
 }
 
-/* left section */
+/* -----------------------left section------------------- */
 .left-section2-text {
     display: flex;
     align-items: flex-start;
@@ -372,7 +375,7 @@ form input[type="tel"]{
     margin-bottom: 20px;
 }
 
-/* mid section */
+/* ------------------------------------mid section---------------------------- */
 .headings-mid-section2-up {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -392,7 +395,7 @@ form input[type="tel"]{
     
 }
 
-/* ===== Right Section (Certificates) ===== */
+/* --------------------------------Right Section---------------------------------- */
 .mid-section-right {
     display: flex;
     flex-direction: column;
@@ -505,7 +508,7 @@ form input[type="tel"]{
     box-shadow: 0px 1px 10px #000000;
 }
 
-/* Starting Section 3 */
+/* --------------------------------------------Section 3------------------------- */
 .top-section3{
     display: flex;
     justify-content: space-around;
@@ -654,9 +657,9 @@ form input[type="tel"]{
     font-family:Arial;
     text-transform: uppercase;
     box-shadow:
-        0 -4px 8px rgba(0,0,0,0.3),   /* Top */
-       -4px 0 8px rgba(0,0,0,0.3),    /* Left */
-        4px 0 8px rgba(0,0,0,0.3);    /* Right */
+        0 -4px 8px rgba(0,0,0,0.3),   /*for  top */
+       -4px 0 8px rgba(0,0,0,0.3),    /* for left */
+        4px 0 8px rgba(0,0,0,0.3);    /* for right */
     border: none;
     cursor: pointer;
     margin-left: 25px;
@@ -731,7 +734,7 @@ img {
     height: auto;
 }
 
-/* --------Media Queries Starting------ */
+/* --------------------------------Media Queries---------------------------- */
 
 .menu-toggle{
     display:none;
@@ -743,7 +746,6 @@ body{
     overflow-x:hidden;
 }
 
-/* ---------------------------Header-------------------------- */
 
 .container-main .top-section1{
     display: flex;
@@ -810,7 +812,6 @@ body{
     width:90%;
 }
 
-/* -----------------------Navigation------------------ */
 
 .container-navbar{
     position:relative;
@@ -849,9 +850,9 @@ body{
     padding:15px;
 }
 
-/* ------------------------------Below Part------------------------------------- */
+/* ------------------------------Below Part (exceptions)------------------------------------- */
 
-.first-dev{
+/* .first-dev{
     display:flex;
     flex-direction:column;
     gap:10px;
@@ -949,9 +950,11 @@ form input[type="tel"]{
 
 .main-img2{
     overflow:hidden;
-}
+} */
 
 /* ------------------------------Above Part(Exception)------------------------------------- */
+
+
 
 
 /* ----------------------------Section 2-------------------------------------------- */
@@ -977,6 +980,7 @@ form input[type="tel"]{
     margin:0;
 }
 
+
 .left-section2-text{
     display:flex;
     justify-content:space-between;
@@ -992,6 +996,8 @@ form input[type="tel"]{
     text-align:center;
 }
 
+
+
 .mid-section2{
     display:flex;
     flex-direction:column;
@@ -1004,6 +1010,7 @@ form input[type="tel"]{
     gap:15px;
 }
 
+
 .mid-section-mid-imageDev{
     display:flex;
     justify-content:center;
@@ -1014,6 +1021,7 @@ form input[type="tel"]{
     width:120px;
     height:auto;
 }
+
 
 .mid-section-right{
     align-items:center;
@@ -1050,7 +1058,6 @@ form input[type="tel"]{
 }
 
 
-/* --------------------------------------------Section 3------------------------------------------ */
 
 
 .top-section3{
