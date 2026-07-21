@@ -738,7 +738,7 @@ img {
     display:none;
 }
 
-@media (max-width:768px){
+@media (max-width:680px){
 
 body{
     overflow-x:hidden;
@@ -808,44 +808,6 @@ body{
 
 .header-right .line{
     width:90%;
-}
-
-
-.container-navbar{
-    position:relative;
-}
-
-.menu-toggle{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    padding:12px 18px;
-    cursor:pointer;
-}
-
-.menu-toggle img{
-    width:42px;
-}
-
-.container-navbar ul{
-    display:none;
-    flex-direction:column;
-    width:100%;
-    background:#8b161e;
-}
-
-.container-navbar ul.show{
-    display:flex;
-}
-
-.container-navbar ul li{
-    width:100%;
-    text-align:center;
-    border-top:1px solid rgba(255,255,255,.2);
-}
-
-.container-navbar ul li a{
-    padding:15px;
 }
 
 /* ------------------------------Below Part (exceptions)------------------------------------- */
