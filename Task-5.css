@@ -5,7 +5,6 @@
     font-family: Arial;
 }
 
-/* -------------Header Section------------------- */
 .container-header{
     display: flex;
     justify-content: space-between;
@@ -55,8 +54,6 @@
     font-family: 'Roboto', sans-serif;
     margin-top: -8px;
 }
-
-/* -------------------------------Navigation Section----------------------------- */
 .container-navbar{
     width: 100%;
     background-color: #8b161e;
@@ -92,7 +89,7 @@
     background-color: #676767;
 }
 
-/* ------------------------------------Main Section--------------------------------- */
+
 .container-main .top-section1{
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -106,7 +103,8 @@
     box-shadow: 1px 1px 10px #333;
 }
 
-/* ------------------------------------------Image 2 Section---------------------------------- */
+
+
 .main-img2{
     box-shadow: 1px 1px 10px #333;
     background-image: url(assets/form_bg.jpg);
@@ -312,7 +310,7 @@ form input[type="tel"]{
     width: 110%;
 }
 
-/* -----------Headings-------------------- */
+
 
 .left-section2 h2,
 .mid-section2 h2,
@@ -340,7 +338,7 @@ form input[type="tel"]{
     margin: 0 0 15px 0;
 }
 
-/* -------------------------Paragraph text-------------- */
+
 .left-section2 p,
 .mid-section2 p,
 .mid-section-right p {
@@ -353,7 +351,6 @@ form input[type="tel"]{
     letter-spacing: px;
 }
 
-/* -----------------------left section------------------- */
 .left-section2-text {
     display: flex;
     align-items: flex-start;
@@ -375,7 +372,7 @@ form input[type="tel"]{
     margin-bottom: 20px;
 }
 
-/* ------------------------------------mid section---------------------------- */
+
 .headings-mid-section2-up {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -395,7 +392,7 @@ form input[type="tel"]{
     
 }
 
-/* --------------------------------Right Section---------------------------------- */
+
 .mid-section-right {
     display: flex;
     flex-direction: column;
@@ -508,7 +505,8 @@ form input[type="tel"]{
     box-shadow: 0px 1px 10px #000000;
 }
 
-/* --------------------------------------------Section 3------------------------- */
+
+
 .top-section3{
     display: flex;
     justify-content: space-around;
@@ -734,7 +732,7 @@ img {
     height: auto;
 }
 
-/* --------------------------------Media Queries---------------------------- */
+
 
 .menu-toggle{
     display:none;
