@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
+    /* outline: 1px solid #71161c; */
 }
 
+/* -------------Header Section------------------- */
 .container-header{
     display: flex;
     justify-content: space-between;
@@ -54,6 +56,8 @@
     font-family: 'Roboto', sans-serif;
     margin-top: -8px;
 }
+
+/* -------------------------------Navigation Section----------------------------- */
 .container-navbar{
     width: 100%;
     background-color: #8b161e;
@@ -89,7 +93,7 @@
     background-color: #676767;
 }
 
-
+/* ------------------------------------Main Section--------------------------------- */
 .container-main .top-section1{
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -103,8 +107,7 @@
     box-shadow: 1px 1px 10px #333;
 }
 
-
-
+/* ------------------------------------------Image 2 Section---------------------------------- */
 .main-img2{
     box-shadow: 1px 1px 10px #333;
     background-image: url(assets/form_bg.jpg);
@@ -310,7 +313,7 @@ form input[type="tel"]{
     width: 110%;
 }
 
-
+/* -----------Headings-------------------- */
 
 .left-section2 h2,
 .mid-section2 h2,
@@ -338,7 +341,7 @@ form input[type="tel"]{
     margin: 0 0 15px 0;
 }
 
-
+/* -------------------------Paragraph text-------------- */
 .left-section2 p,
 .mid-section2 p,
 .mid-section-right p {
@@ -351,6 +354,7 @@ form input[type="tel"]{
     letter-spacing: px;
 }
 
+/* -----------------------left section------------------- */
 .left-section2-text {
     display: flex;
     align-items: flex-start;
@@ -372,7 +376,7 @@ form input[type="tel"]{
     margin-bottom: 20px;
 }
 
-
+/* ------------------------------------mid section---------------------------- */
 .headings-mid-section2-up {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -392,7 +396,7 @@ form input[type="tel"]{
     
 }
 
-
+/* --------------------------------Right Section---------------------------------- */
 .mid-section-right {
     display: flex;
     flex-direction: column;
@@ -505,8 +509,7 @@ form input[type="tel"]{
     box-shadow: 0px 1px 10px #000000;
 }
 
-
-
+/* --------------------------------------------Section 3------------------------- */
 .top-section3{
     display: flex;
     justify-content: space-around;
@@ -527,7 +530,7 @@ form input[type="tel"]{
 }
 
 .left-side-btns .left-btn{
-    background-color: #838383;
+    background-color: #726e6e;
     width: 280px;
     height: 65px;
     margin: 18px 0px;
@@ -576,12 +579,12 @@ form input[type="tel"]{
 .left-end-menu-headings1 h1{
     padding-bottom: 24%;
     font-family:'Times New Roman', Times, serif;
-    color: #333;
+    color: #3a3636;
 }
 
 .left-end-menu-headings1 h1 span{
     padding-bottom: 24%;
-    color: #8b161e;
+    color: #71161c;
 }
 
 .left-end-menu-headings2 h1{
@@ -592,7 +595,7 @@ form input[type="tel"]{
 }
 
 .mid-section3 h1{
-    color: #333;
+    color: #454141;
     font-family:'Times New Roman', Times, serif;
     font-weight: 800;
     padding-bottom: 20px;
@@ -613,7 +616,7 @@ form input[type="tel"]{
 }
 
 .right-section3 h2 span{
-    color: #8b161e;
+    color: #7c131a;
 }
 
 .right-section3 p{
@@ -649,7 +652,7 @@ form input[type="tel"]{
 .right-side-btns button{
     width: 110px;
     height: 24px;
-    background-color: #bd0906;
+    background-color: #911b19;
     color: white;
     font-size: 13px;
     font-family:Arial;
@@ -689,8 +692,8 @@ form input[type="tel"]{
 .only-line{
     width: 100%;
     height: 2px;
-    background-color: rgb(99, 98, 98);
-    box-shadow: 0px 1px 8px #333;
+    background-color: rgb(126, 121, 121);
+    box-shadow: 0px 1px 8px #100e0e;
     margin-top: 5px;
     margin-bottom: 15px;
 }
@@ -732,13 +735,19 @@ img {
     height: auto;
 }
 
+/* --------------------------------Media Queries---------------------------- */
 
 
 .menu-toggle{
     display:none;
 }
 
-@media (max-width:680px){
+
+/* --------------------------------------------(1200)--------------------------------------------- */
+
+
+@media (min-width:768px) and (max-width:1200px)
+{
 
 body{
     overflow-x:hidden;
@@ -776,6 +785,7 @@ body{
 .header-left,
 .header-right{
     width:100%;
+    padding-bottom: 0px ;
 }
 
 .header-left{
@@ -791,6 +801,7 @@ body{
 
 .header-right{
     padding:20px;
+    margin-bottom: 10px;
     text-align:center;
 }
 
@@ -807,12 +818,20 @@ body{
 }
 
 .header-right .line{
-    width:90%;
+    width:70%;
+    margin-bottom: 10px;
 }
 
-/* ------------------------------Below Part (exceptions)------------------------------------- */
+#nav-links{
+    display: none;
+}
 
-/* .first-dev{
+.menu-toggle{
+    display: flex;
+    justify-content: end;
+}
+
+.first-dev{
     display:flex;
     flex-direction:column;
     gap:10px;
@@ -910,9 +929,503 @@ form input[type="tel"]{
 
 .main-img2{
     overflow:hidden;
-} */
+} 
 
-/* ------------------------------Above Part(Exception)------------------------------------- */
+/* ----------------------top section 2------------------- */
+
+.top-section2{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    gap:35px;
+}
+
+.left-section2,
+.mid-section2{
+    border-right:none;
+    padding-right:0;
+}
+
+.left-section2,
+.mid-section2,
+.mid-section-right{
+    width:100%;
+    margin:0;
+}
+
+
+.left-section2-text{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+#linemdsec{
+    width: 40%;
+}
+
+
+.left-section2 h2,
+.left-section2 h3,
+.mid-section2 h2,
+.mid-section-right h1,
+.mid-section-right p{
+    text-align:start;
+}
+
+.mid-section2{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+
+
+.headings-mid-section2-up{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:200px;
+}
+
+
+.mid-section-mid-imageDev{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mid-section-mid-img{
+    width:160px;
+    height:120px;
+}
+
+
+.mid-section-right{
+    align-items:center;
+    text-align:center;
+}
+
+.mid-section-img-right-side{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.mid-section-btns{
+    align-items:center;
+}
+
+.mid-section-btns button{
+    width:100%;
+    max-width:220px;
+    margin:0;
+}
+
+.mid-section-btns .line{
+    width:100%;
+}
+
+.section2-bottomLine{
+    margin:35px 0;
+}
+
+.mid-section2{
+    width:100%;
+}
+
+
+/* ----------------------section 3------------------ */
+
+.top-section3{
+    display:flex;
+    flex-direction:column;
+    margin:20px;
+    padding:0;
+    gap:40px;
+}
+
+.headings-left-section3,
+.mid-section3,
+.right-section3{
+    width:100%;
+}
+
+
+.headings-left-section3 h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.left-side-btns .left-btn{
+    width:100%;
+    max-width:none;
+}
+
+.left-side-btns{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.left-side-btns .left-btn{
+    display:flex;
+    align-items:center;
+}
+
+.left-end-menu{
+    text-align:center;
+    padding-top:20px;
+}
+
+.left-end-menu-headings2{
+    display:none;
+}
+
+.mid-section3{
+    text-align:center;
+}
+
+.mid-section3 h1{
+    font-size:34px;
+}
+
+.mid-section3 p{
+    text-align:justify;
+    line-height:1.8;
+}
+
+/* Right Section */
+
+.right-section3{
+    align-items:center;
+    text-align:center;
+    gap:35px;
+}
+
+.right-text1-section3,
+.right-text2-section3,
+.right-text3-section3{
+    width:100%;
+}
+
+.right-side-btns button{
+    width:100%;
+    max-width:220px;
+}
+
+.right-img-section3{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.right-img1-section3 img{
+    width:180px;
+}
+
+.right-img2-section3 img{
+    width:120px;
+}
+
+.right-end-section3{
+    width:100%;
+}
+
+.right-icons-section3{
+    justify-content:center;
+    gap:20px;
+}
+
+.right-icons-section3 img{
+    width:40px;
+}
+
+.only-line{
+    margin:15px 0;
+} 
+
+}
+
+/* --------------------------------------------(768)--------------------------------------------- */
+
+
+@media (min-width: 680px) and (max-width: 768px){
+
+body{
+overflow-x:hidden;
+}
+
+.container-main .top-section1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.container-header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.main-img1,
+.main-img2{
+    width:100%;
+}
+
+.main-img1 img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.container-main{
+    width:100%;
+}
+
+.header-left,
+.header-right{
+    width:100%;
+    padding-bottom: 0px ;
+}
+
+.header-left{
+    display:flex;
+    justify-content:center;
+}
+
+.header-left img{
+    width:90%;
+    max-width:320px;
+    height:auto;
+}
+
+.header-right{
+    padding:20px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.header-right h2{
+    font-size:24px;
+}
+
+.header-right h1{
+    font-size:40px;
+}
+
+.header-right p{
+    font-size:18px;
+}
+
+.header-right .line{
+    width:70%;
+    margin-bottom: 10px;
+}
+
+#nav-links{
+    display: none;
+}
+
+.menu-toggle{
+    display: flex;
+    justify-content: end;
+}
+
+.top-section2{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    gap:35px;
+}
+
+.left-section2,
+.mid-section2{
+    border-right:none;
+    padding-right:0;
+}
+
+.left-section2,
+.mid-section2,
+.mid-section-right{
+    width:100%;
+    margin:0;
+}
+
+
+.left-section2-text{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+#linemdsec{
+    width: 40%;
+}
+
+
+.left-section2 h2,
+.left-section2 h3,
+.mid-section2 h2,
+.mid-section-right h1,
+.mid-section-right p{
+    text-align:start;
+}
+
+.mid-section2{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+
+
+.headings-mid-section2-up{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:200px;
+}
+
+
+.mid-section-mid-imageDev{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mid-section-mid-img{
+    width:160px;
+    height:120px;
+}
+
+
+.mid-section-right{
+    align-items:center;
+    text-align:center;
+}
+
+.mid-section-img-right-side{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.mid-section-btns{
+    align-items:center;
+}
+
+.mid-section-btns button{
+    width:100%;
+    max-width:220px;
+    margin:0;
+}
+
+.mid-section-btns .line{
+    width:100%;
+}
+
+.section2-bottomLine{
+    margin:35px 0;
+}
+
+.mid-section2{
+    width:100%;
+}
+
+}
+
+
+
+/* --------------------------------------------(680)--------------------------------------------- */
+@media  (max-width:680px)
+{
+
+body{
+    overflow-x:hidden;
+}
+
+
+.container-main .top-section1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.container-header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.main-img1,
+.main-img2{
+    width:100%;
+}
+
+.main-img1 img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.container-main{
+    width:100%;
+}
+
+.header-left,
+.header-right{
+    width:100%;
+    padding-bottom: 0px ;
+}
+
+.header-left{
+    display:flex;
+    justify-content:center;
+}
+
+.header-left img{
+    width:90%;
+    max-width:320px;
+    height:auto;
+}
+
+.header-right{
+    padding:20px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.header-right h2{
+    font-size:24px;
+}
+
+.header-right h1{
+    font-size:40px;
+}
+
+.header-right p{
+    font-size:18px;
+}
+
+.header-right .line{
+    width:70%;
+    margin-bottom: 10px;
+}
+
+#nav-links{
+    display: none;
+}
+
+.menu-toggle{
+    display: flex;
+    justify-content: end;
+}
 
 
 
@@ -948,15 +1461,18 @@ form input[type="tel"]{
     gap:20px;
 }
 
+#linemdsec{
+    width: 40%;
+}
+
+
 .left-section2 h2,
 .left-section2 h3,
 .mid-section2 h2,
 .mid-section-right h1,
 .mid-section-right p{
-    text-align:center;
+    text-align:start;
 }
-
-
 
 .mid-section2{
     display:flex;
@@ -964,10 +1480,12 @@ form input[type="tel"]{
     gap:30px;
 }
 
+
+
 .headings-mid-section2-up{
     display:grid;
     grid-template-columns:2fr 1fr;
-    gap:15px;
+    gap:200px;
 }
 
 
@@ -978,8 +1496,8 @@ form input[type="tel"]{
 }
 
 .mid-section-mid-img{
-    width:120px;
-    height:auto;
+    width:160px;
+    height:120px;
 }
 
 
@@ -1112,9 +1630,6 @@ form input[type="tel"]{
     width:120px;
 }
 
-
-    
-
 .right-end-section3{
     width:100%;
 }
@@ -1135,4 +1650,344 @@ form input[type="tel"]{
 
 
 }
+
+
+
+
+
+/* ---------------------------450------------------------------------------- */
+
+
+@media (max-width:450px){
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.container-header{
+    padding:10px;
+}
+
+.header-left{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.header-left img{
+    width:85%;
+}
+
+.header-right{
+    width:100%;
+    text-align:center;
+    padding:10px;
+}
+
+.header-right h2{
+    font-size:18px;
+}
+
+.header-right h1{
+    font-size:30px;
+}
+
+.header-right p{
+    font-size:14px;
+}
+
+.header-right .line{
+    width:90%;
+    margin:auto;
+}
+
+
+.container-main .top-section1{
+    padding:15px;
+    gap:20px;
+}
+
+.main-img1,
+.main-img2{
+    width:100%;
+}
+
+
+.main-img2{
+    width:100%;
+    min-height:auto;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    padding:25px 20px;
+
+}
+
+.first-div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    width:100%;
+}
+
+.text1-on-img{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.main-img2 .text1-on-img h2{
+    width:180px;
+    font-size:16px;
+    text-align:center;
+    padding:8px;
+}
+
+.main-img2 .text2-on-img h2{
+    font-size:22px;
+    text-align:center;
+    line-height:1.3;
+}
+
+.text3-on-img{
+    font-size:24px;
+    text-align:center;
+}
+
+.text4-on-img{
+    width:100%;
+}
+
+.text4-on-img p{
+    padding:0;
+    font-size:13px;
+    line-height:1.6;
+    text-align:center;
+}
+
+
+form{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:0;
+}
+
+form div:first-child{
+    width:100%;
+}
+
+form label{
+    display:block;
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+form input{
+    width:100% !important;
+    height:38px;
+    margin:0;
+}
+
+.form-textarea{
+    width:100%;
+    padding:0;
+}
+
+.form-textarea textarea{
+    width:100%;
+    height:90px;
+}
+
+.conf-img{
+    width:120px;
+    margin:auto;
+    transform:rotate(8deg);
+}
+
+.form-last-div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    text-align:center;
+}
+
+.form-btn{
+    width:100%;
+    height:48px;
+    font-size:18px;
+}
+
+/*------------------------------section 2-------------------------------- */
+
+.top-section2{
+    padding:15px;
+    gap:30px;
+}
+
+.left-section2 h2,
+.mid-section2 h2,
+.mid-section-right h1{
+    font-size:22px;
+    text-align:center;
+}
+
+.left-section2 h3{
+    text-align:center;
+    font-size:17px;
+}
+
+.left-section2 p,
+.mid-section2 p,
+.mid-section-right p{
+    font-size:14px;
+    line-height:1.6;
+    text-align:center;
+}
+
+.left-section2-text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.headings-mid-section2-up{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.mid-section-mid-img{
+    width:120px;
+}
+
+.mid-section-img-right-side{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.mid-section-img-right-side img{
+    width:90px;
+}
+
+.mid-section-btns button{
+    width:100%;
+    max-width:none;
+}
+
+ /* ----------------------------section 3----------------------  */
+
+.top-section3{
+    padding:15px;
+    gap:30px;
+}
+
+.headings-left-section3 h2{
+    text-align:center;
+}
+
+.left-side-btns .left-btn{
+    width:100%;
+    height:auto;
+    padding:12px;
+}
+
+.left-side-btns .left-btn h1{
+    font-size:18px;
+}
+
+.left-side-btns .left-btn p{
+    font-size:12px;
+}
+
+.left-end-menu{
+    text-align:center;
+}
+
+.left-end-menu-headings2{
+    display:none;
+}
+
+.mid-section3 h1{
+    font-size:26px;
+    text-align:center;
+}
+
+.mid-section3 p{
+    font-size:14px;
+    line-height:1.7;
+    text-align:justify;
+}
+
+.right-section3{
+    text-align:center;
+}
+
+.right-section3 h2{
+    font-size:22px;
+}
+
+.right-section3 p{
+    font-size:14px;
+}
+
+.right-side-btns button{
+    width:100%;
+}
+
+.right-img1-section3 img{
+    width:170px;
+}
+
+.right-img2-section3 img{
+    width:100px;
+}
+
+.right-icons-section3{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.right-icons-section3 img{
+    width:30px;
+}
+
+
+
+footer{
+    padding:15px;
+    text-align:center;
+}
+
+}
+
+
+
+
+
 
