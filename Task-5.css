@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
-    /* outline: 1px solid #71161c; */
 }
 
 /* -------------Header Section------------------- */
@@ -546,7 +545,7 @@ form input[type="tel"]{
 
 .left-side-btns .left-btn h1{
     color: white;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
     padding-top: 7px;
 }
@@ -554,7 +553,7 @@ form input[type="tel"]{
 
 .left-side-btns .left-btn p{
     color: white;
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding-top: 6px;
@@ -746,7 +745,7 @@ img {
 /* --------------------------------------------(1200)--------------------------------------------- */
 
 
-@media (min-width:768px) and (max-width:1200px)
+@media (min-width:680px) and (max-width:1200px)
 {
 
 body{
@@ -846,23 +845,23 @@ body{
 .main-img2 .text1-on-img h2{
     width:100%;
     text-align:center;
-    font-size:22px;
+    font-size:40px;
 }
 
 .main-img2 .text2-on-img h2{
     text-align:center;
-    font-size:30px;
+    font-size:40px;
     line-height:1.2;
 }
 
 .text3-on-img{
-    font-size:38px;
+    font-size:50px;
 }
 
 .text4-on-img p{
     padding:15px;
     text-align:center;
-    font-size:17px;
+    font-size:20px;
     line-height:1.5;
 }
 
@@ -876,18 +875,25 @@ form{
 
 form div:first-child{
     width:100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 form label{
     display:block;
     margin-top:12px;
     margin-bottom:5px;
+    font-size: 20px;
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"]{
-    width:100%;
+    width:50%;
     margin:0;
     height:38px;
 }
@@ -895,7 +901,7 @@ form input[type="tel"]{
 .conf-img{
     width:180px;
     height:auto;
-    transform:rotate(14deg);
+    transform:rotate(10deg);
 }
 
 .conf-img img{
@@ -909,7 +915,7 @@ form input[type="tel"]{
 }
 
 .form-textarea textarea{
-    width:100%;
+    width:70%;
     height:120px;
 }
 
@@ -937,7 +943,7 @@ form input[type="tel"]{
     display:flex;
     flex-direction:column;
     padding:20px;
-    gap:35px;
+    gap: 60px;
 }
 
 .left-section2,
@@ -972,12 +978,32 @@ form input[type="tel"]{
 .mid-section-right h1,
 .mid-section-right p{
     text-align:start;
+    font-size: 30px;
+}
+
+.left-section2-img img{
+    height: 200px;
+    width: 160px;
+}
+
+.left-section2 p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.mid-section2 p{
+    font-size: 18px;
+    word-spacing: 3px;
 }
 
 .mid-section2{
     display:flex;
     flex-direction:column;
-    gap:30px;
+    gap:35px;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 
@@ -1070,8 +1096,9 @@ form input[type="tel"]{
 }
 
 .left-side-btns .left-btn{
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .left-end-menu{
@@ -1149,9 +1176,10 @@ form input[type="tel"]{
 
 }
 
+
+
 /* --------------------------------------------(768)--------------------------------------------- */
-
-
+/*
 @media (min-width: 680px) and (max-width: 768px){
 
 body{
@@ -1263,6 +1291,10 @@ overflow-x:hidden;
     gap:20px;
 }
 
+.headings-left-section3{
+    display: flex;
+}
+
 #linemdsec{
     width: 40%;
 }
@@ -1338,11 +1370,15 @@ overflow-x:hidden;
 }
 
 }
+*/
+
+
+
 
 
 
 /* --------------------------------------------(680)--------------------------------------------- */
-@media  (max-width:680px)
+@media (min-width: 450px) and (max-width:680px)
 {
 
 body{
@@ -1570,8 +1606,12 @@ body{
 }
 
 .left-side-btns .left-btn{
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .left-end-menu{
@@ -1650,9 +1690,6 @@ body{
 
 
 }
-
-
-
 
 
 /* ---------------------------450------------------------------------------- */
@@ -1922,6 +1959,7 @@ form input{
 
 .left-side-btns .left-btn p{
     font-size:12px;
+    margin-left: 48px;
 }
 
 .left-end-menu{
@@ -1931,6 +1969,15 @@ form input{
 .left-end-menu-headings2{
     display:none;
 }
+
+.left-side-btns h1{
+    color: white;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 7px;
+}
+
+
 
 .mid-section3 h1{
     font-size:26px;
